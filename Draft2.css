@@ -1,0 +1,197 @@
+/* Create classes for Sidebar Menu */
+
+.sidebar {
+    margin-top: 130px;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar a {
+    text-decoration: none;
+    padding: 30px 0px 8px 8px;
+    font-size: 20px;
+    color: #275D38;
+    display: block;
+}
+
+.open-close {
+    position: absolute;
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    box-shadow: 0px 1px 4px 1px rgba(0 ,0, 0, .3);
+    left: 100%;
+    top: 0.5rem;
+    transform: translateX(-100%);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.main-content {
+    text-decoration: none;
+    padding: 30px 0px 8px 8px;
+    font-size: 20px;
+    color: #275D38;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.dropdown-btn {
+    font-size: 20px;
+    padding: 32px 0px 8px 8px;
+    color: #275D38;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#dropdown-container {
+    display: none;
+    background-color: white;
+    padding-left: 8px;
+    width: 100%;
+}
+
+#fa-caret-down {
+    float: right;
+    padding-top: 4px;
+    color: black;
+    height: 100%;
+}
+
+.sidebar_small {
+    width: 3%;
+}
+
+.main-content_large {
+    width: 90%;
+}
+
+
+/* Create Classes for Hero Image and Header */
+
+.header {
+    margin-left: 0px;
+    margin-top: 0px;
+    font-size: 40px;
+    color: white;
+    background-color: #275D38;
+    padding-left: 20px;
+    padding-top: 25px;
+    height: 105px;
+}
+
+.subheader {
+    margin-left: 20px;
+    font-size: 15px;
+}
+.hero-img {
+    width: 98.5%;
+    height: 50%;
+    z-index: -5;
+    position: absolute;
+    margin: 0px;
+}
+
+/* Create Classes for Main Content */
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#up-events {
+    margin-top:400px;
+    color:#275D38;
+    margin-left: 220px;
+    font-size: 35px;
+}
+
+.list-box {
+    width: 85%;
+    height: 400px;
+    margin-left: 220px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+#schedule {
+    margin-left: 220px;
+    font-size: 35px;
+    color: #275D38;
+    margin-top: 80px;
+}
+
+.schedule-box {
+    width: 22%;
+    height: 180px;
+    background-color: #f1f1f1;
+    text-align: center;
+    margin-left: 250px;
+}
+
+.register-btn {
+    width: 150px;
+    height: 35px;
+    background-color:#275D38;
+    color: white;
+    font-size: 15px;
+    border-color: white;
+    border-width: 3px;
+}
+
+#leftbox{
+    float: left;
+    width: 14%;
+    margin-left: 230px;
+}
+
+#left-middle {
+    float: left;
+    width: 13%;
+    margin-left: 10px;
+}
+
+#middle {
+    float: left;
+    width: 13%;
+    margin-left: 10px;
+}
+
+#right-middle {
+    float:left;
+    width: 13%;
+    margin-left: 10px;
+}
+
+#rightbox {
+    float: left;
+    width: 14%;
+    margin-left: 10px;
+}
+
+#right-most {
+    float: left;
+    width: 13%;
+    margin-left: 10px;
+}
+
+.feedback-lbl {
+    font-size: 35px;
+    color:#275D38;
+    margin-left: 220px;
+    padding-top: 250px;
+}
+
+.feedback-form {
+    width: 65%;
+    height: 600px;
+    margin-left: 320px;
+    background-color: #f1f1f1;
+    text-align: center;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="Draft2.css">
+
+<title>Tech Club Hub</title>
+
+                                            <!--Create Sidebar Menu-->
+
+<div class="sidebar">
+    <button class="open-close"><></button>
+    <a href="#home" class="main-content">Home</a>
+    <button class="dropdown-btn">Clubs
+        <i id ="fa-caret-down">&nbsp;&nbsp;&nbsp;🢗</i>
+    </button>
+        <div id="dropdown-container" class="main-content">
+            <a href="#compsci" style="font-size:15px;padding-left:25px;padding-top:0px;">Computer Science</a>
+            <a href="compsec" style="font-size:15px;padding-left:25px;">Cyber Security</a>
+            <a href="datasci" style="font-size:15px;padding-left:25px;">Data Science</a>
+            <a href="girlcode" style="font-size:15px;padding-left:25px;">Girls Who Code</a>
+            <a href="webdev" style="font-size:15px;padding-left:25px;">Web Development</a>
+            <a href="ixd" style="font-size:15px;padding-left:25px;">IXD</a>
+        </div>
+    <a href="#registration" class="main-content">Club Officers</a>
+    <a href="#feedback" class="main-content">Contact Us</a>
+
+<!--Create JavaScript to Allow Sidebar Menu to Collapse-->
+<script>
+const sidebar = document.querySelector('.sidebar');
+const mainContent = document.querySelector('.main-content');
+document.querySelector('button').onclick = function () {
+  sidebar.classList.toggle('sidebar_small');
+  mainContent.classList.toggle('main-content_large')
+}
+</script>
+
+<!--Create JavaScript for Dropdown Button-->
+
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+        } else {
+            dropdownContent.style.display = "block";
+        }
+      });
+}
+</script>
+
+                                                    <!-- Header Information-->
+
+</div>
+<h1 class="header"><u>Tech Club Collaborative</u><p class="subheader"><i>Student-Run Tech Clubs at Utah Valley University</i></p>
+<img class="hero-img" src="hero_img.jpg">
+
+                                                        <!-- Main Body -->
+
+
+<!-- Hero Image -->
+
+<body><p style="margin-top:150px;margin-left:700px;">Placeholder Image</p>
+
+<!-- First Section -->
+
+<h2 id="up-events">Upcoming Events</h2>
+<div class="list-box"><h3 style="padding-top:10px;">[Date]</h3><p>[Activity]<br><h3>[Date]</h3>[Activity]</p><h3>[Date]</h3>[Activity]</p><h3>[Date]</h3>[Activity]</p><h3>[Date]</h3>[Activity]</p></div>
+
+<!-- Second Section -->
+
+<h2 id="schedule">Weekly Meeting Information</h2>
+<div id= "leftbox" class="schedule-box"><h3 style="padding-top:10px;">Computer Science Club</h3><p style="text-align:left;padding-left:20px;">When: [Date and Time]<br><br>Where: [Meeting Room]</p><button class="register-btn">Register Here</button></div>
+<div id="left-middle" class="schedule-box"><h3 style="padding-top:10px;">Cyber Security Club</h3><p style="text-align:left;padding-left:20px;">When: [Date and Time]<br><br>Where: [Meeting Room]</p><button class="register-btn">Register Here</button></div>
+<div id="middle" class="schedule-box"><h3 style="padding-top:10px;">Data Science Club</h3><p style="text-align:left;padding-left:20px;">When: [Date and Time]<br><br>Where: [Meeting Room]</p><button class="register-btn">Register Here</button></div>
+<div id="right-middle" class="schedule-box"><h3 style="padding-top:10px;">Girls Who Code</h3><p style="text-align:left;padding-left:20px;">When: [Date and Time]<br><br>Where: [Meeting Room]</p><button class="register-btn">Register Here</button></div>
+<div id= "rightbox" class="schedule-box"><h3 style="padding-top:10px;">Web Development Club</h3><p style="text-align:left;padding-left:20px;">When: [Date and Time]<br><br>Where: [Meeting Room]</p><button class="register-btn">Register Here</button></div>
+<div id = "right-most" class="schedule-box"><h3 style="padding-top:10px;">IXD</h3><p style="text-align:left;padding-left:20px;">When: [Date and Time]<br><br>Where: [Meeting Room]</p><button class="register-btn">Register Here</button></div>
+
+<!-- Third Section -->
+
+<h3 class="feedback-lbl">Feedback</h3>
+<div class="feedback-form"><p style="font-size:25px;text-align:center;padding-top:100px;">Feedback Form</p></div>
+
+
+
+</body>
+</html>
